@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor demo</title>
+</head>
+
+<body>
+<div id='bbb'>
+    
+</div>
+<div>
+
+<script type="text/javascript">
+        var a=document.getElementById("bbb");
+        if (window.sessionStorage["searchIndex"]) {
+            var ele = JSON.parse(window.sessionStorage.getItem("searchIndex")).ele;
+             a.innerHTML=ele;
+        }
+</script>
+</body>
+
+</html>
